@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="js/funcion_mostar_ocultar.js"></script>
+    <script src="js/main.js"></script>
+    <title>Python a JavaScript</title>
+
+</head>
+
+<body>
+    <h1>cuarto taller de python a JavaScript</h1>
+    <div class="div_principal">
+        <div class="btn_ejercicios">
+            <section>
+                <button id="btn_01">Ejercicio 01</button>
+                <button id="btn_02">Ejercicio 02</button>
+                <button id="btn_03">Ejercicio 03</button>
+                <button id="btn_04">Ejercicio 04</button>
+                <button id="btn_05">Ejercicio 05</button>
+                <button id="btn_06">Ejercicio 06</button>
+                <button id="btn_07">Ejercicio 07</button>
+                <button id="btn_08">Ejercicio 08</button>
+                <button id="btn_09">Ejercicio 09</button>
+                <button id="btn_10">Ejercicio 10</button>
+            </section>
+        </div>
+        <div class="panel_ejercicios" id="panel_ejercicios">
+            <section>
+                <div id="ejercicio_01" class="ejercicios" style="display:block;">
+                    <h4>Escribe la tabla de multiplicar de un numero N positivo</h4>
+                    <form id="form_01">
+                        <input id="numero_mult" type="number" required placeholder="Ingrese el a multiplicar">
+                        <table class="tabla" id="tabla_mult">
+                            <thead>
+                                <tr>
+                                </tr>
+                            </thead>
+                            <tbody id="dataTable_multi"></tbody>
+                        </table>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+                </div>
+                <div id="ejercicio_02" class="ejercicios" style="display:none;">
+                    <h4>Generar la serie: 1, 5, 3, 7, 5, 9, 7, ..., 23</h4>
+                    <table class="tabla" id="tabla_mult">
+                        <thead>
+                            <tr>
+                        </thead>
+                        <tbody id="dataTable_serie"></tbody>
+                    </table>
+                    <button class="btn_inicio" id="btn_incio_ejer02" value="Iniciar">Iniciar</button>
+                </div>
+                <div id="ejercicio_03" class="ejercicios" style="display:none;">
+                    <h4>La Universidad del Valle requiere un programa que le permita conocer cómo califican los
+                        estudiantes la comida de la cafetería central. Para ello definió una escala de 1 a 10 (1 denota
+                        horrible y 10 denota excelente). El programa debe ser capaz capturar la calificación de
+                        cualquier número de estudiantes (no se sabe cuántos estudiantes se encuestarán, así que cuando
+                        el encuestador ingrese la calificación de 0, se sabrá que la encuesta habrá concluido). El
+                        programa deberá mostrar en su salida cuántos estudiantes fueron encuestados, así como el resumen
+                        de la encuesta como el promedio y cuál es la nota más alta dada y la nota más baja dada en la
+                        encuesta efectuada.</h4>
+                    <form id="form_03">
+                        <input id="cant_alum" type="number" required placeholder="Ingrese el parametro de votos">
+                        <table class="tabla" id="tabla_calif">
+                            <thead>
+                                <tr>
+                                </tr>
+                            </thead>
+                            <tbody id="dataTable_calif"></tbody>
+                        </table>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+                    <dialog class="favDialog" id="favDialog_03" data-calif>
+                        <form id="dialog_03">
+                            <input type="number" name="clificasion" required placeholder="Ingrese su calificacion">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+                <div id="ejercicio_04" class="ejercicios" style="display:none;">
+                    <h4>Una persona adquirió un producto para pagar en 20 meses. El primer mes pagó $10, el segundo $20,
+                        el tercero $40 y así sucesivamente. Realice un algoritmo para determinar cuánto debe pagar
+                        mensualmente y el total de lo que pagó después de los 20 meses y represéntelo mediante
+                        pseudocódigo y el utilizando el ciclo apropiado.</h4>
+                    <table class="tabla" id="tabla_examen">
+                        <thead>
+                            <tr>
+                                <th>MES</th>
+                                <th>VALOR COTA</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTable_cota"></tbody>
+                    </table>
+
+                    <button id="btn_incio_ejer04" value="Calcular">Calcular</button>
+                </div>
+                <div id="ejercicio_05" class="ejercicios" style="display:none;">
+                    <h4>Un empleado de la tienda “Tiki Taka” realiza N ventas durante el día, se requiere saber cuántas
+                        de ellas fueron mayores a $1000, cuántas fueron mayores a $500 pero menores o iguales a $1000, y
+                        cuántas fueron menores o iguales a $500. Además, se requiere saber el monto de lo vendido en
+                        cada categoría y de forma global. Realice un algoritmo que permita determinar lo anterior.</h4>
+                    <form id="form_05">
+                        <input id="parametro" type="number" required placeholder="Ingrese el parametro de ventas">
+                        <table class="tabla" id="tabla_operact">
+                            <thead>
+                                <tr>
+                                    <th>CATEGORIA</th>
+                                    <th>MONTO DE VENTAS</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dataTable_categoria"></tbody>
+                        </table>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+                    <dialog class="favDialog" id="favDialog_05" data-ciclo>
+                        <form id="dialog_05">
+                            <input type="number" name="valor" required placeholder="Ingrese el monto">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+                <div id="ejercicio_06" class="ejercicios" style="display:none;">
+                    <h4>En una empresa de 100 trabajadores, se hará un aumento al salario de acuerdo al tiempo de
+                        servicio, para este aumento se tomará en cuenta lo siguiente:<br><br>
+                        - Tiempo de servicio: de 1 a 5 años Aumento: 100 PESOS<br>
+                        - Tiempo de servicio: de 5 a 10 años Aumento: 250 PESOS<br>
+                        - Tiempo de servicio: de 10 a 20 años Aumento: 400 PESOS.<br>
+                        - Tiempo de servicio: de 20 años a más Aumento: 550 PESOS.</h4>
+                    <table class="tabla" id="tabla_operact">
+                        <thead>
+                            <tr>
+                                <th>COD</th>
+                                <th>NOMBRE TRABAJADOR</th>
+                                <th>TIEMPO DE SERVICIO</th>
+                                <th>VALOR DEL AUMENTO</td>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTable_oprac"></tbody>
+                    </table>
+                    <dialog class="favDialog" id="favDialog_ejer06">
+                        <form id="dialogo_06" data-opreract="100">
+                            <input type="text" name="nombre_trabajador" required
+                                placeholder="Ingrese El nombre del estudiante">
+                            <select name="opc_servicio" id="opc_servicio">
+                                <option value=""></option>
+                                <option value="1 a 5 años">1 a 5 años</option>
+                                <option value="5 a 10 años">5 a 10 años</option>
+                                <option value="10 a 20 años">10 a 20 años</option>
+                                <option value="20 años a más">20 años a más</option>
+                            </select>
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                    <button class="btn_inicio" id="btn_incio_ejer06" value="Iniciar">Iniciar</button>
+                </div>
+                <div id="ejercicio_07" class="ejercicios" style="display:none;">
+                    <h4>Diseñe un pseudocódigo que lea el valor de un ángulo expresado en radianes y calcule e imprima
+                        el valor del seno de dicho ángulo. Se leerá también el número de términos de la serie.
+                        SEN(X) = X - ( X 3 / 3 ! ) + ( X 5 / 5 ! ) - (X7/ 7!) + .....</h4>
+                    <form id="form_07">
+                        <input id="max_exp" type="number" required placeholder="Ingrese el parametro de ventas">
+                        <input id="ang_rad" type="number" required placeholder="Ingrese el parametro de ventas">
+                        <textarea id="text_resultado_ejer07" readonly
+                            placeholder="Aqui aparece el resultado"></textarea><br>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+                </div>
+                <div id="ejercicio_08" class="ejercicios" style="display:none;">
+                    <h4>Hacer un algoritmo que al ingresar 2 números por la pantalla y se calcule la suma, resta,
+                        multiplicación y división. El proceso debe terminar cuando se hallan realizado 10 procesos
+                        (Hacer uso de
+                        contadores).</h4>
+                    <table class="tabla" id="tabla_mates">
+                        <thead>
+                            <tr>
+                                <th>COD</th>
+                                <th>SUMA</th>
+                                <th>RESTA</th>
+                                <th>MULTIPLICACION</td>
+                                <th>DIVISION</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTable_mates"></tbody>
+                    </table>
+                    <dialog class="favDialog" id="favDialog_ejer08">
+                        <form id="dialogo_08" data-mates="10">
+                            <input type="number" name="num_1" required placeholder="Ingrese un numero">
+                            <input type="number" name="num_2" required placeholder="Ingrese otra numero">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                    <button class="btn_inicio" id="btn_incio_ejer08" value="Iniciar">Iniciar</button>
+                </div>
+
+                <div id="ejercicio_09" class="ejercicios" style="display:none;">
+                    <h4>Diseñar un diagrama que permita emitir la factura correspondiente a una compra de un artículo
+                        del cual se adquiere una o varias unidades y se conoce su precio antes de IVA (iva igual al
+                        16%), y si el precio bruto (precio de venta más IVA) es mayor de $500.000.oo se debe realizar un
+                        descuento del 15%.</h4>
+
+                    <form id="form_09">
+                        <input type="number" name="num_1" required placeholder="Ingreseprecio del producto">
+                        <input type="number" name="num_2" required placeholder="Ingrese los apellidos del estudiante">
+                        <textarea id="text_resultado_ejer09" readonly
+                        placeholder="Aqui aparece el resultado"></textarea><br>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+                </div>
+                <!--<div id="ejercicio_10" class="ejercicios" style="display:none;">
+                    <h4>Se está realizando un estudio del tráfico en una de las calles de su ciudad. Para ello deberá
+                        controlar durante un cierto tiempo los vehículos que pasan por dicha calle. Los distintos tipos
+                        de vehículo será: Turismo, Autobús, Camión o Motocicleta. Además, si el tipo de vehículo es
+                        Turismo debe anotar el número de ocupantes. El programa deberá contar 200 vehículos, e ir
+                        guardando cuantos pasan de cada tipo. Finalmente mostrará el porcentaje de cada uno de los
+                        tipos.</h4>
+                    <table class="tabla" id="tabla_transito">
+                        <thead>
+                            <tr>
+                                <th>COD</th>
+                                <th>VEHICULO</th>
+                                <th>PORCENTAJE DE TRAFICO</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTable_transito"></tbody>
+                    </table>
+                    <dialog class="favDialog" id="favDialog_ejer10">
+                        <form id="dialogo_10" data-transito="200">
+                            <select id="vehiculo" id="">
+                                <option value="Selecionar">Selecionar</option>
+                                <option value="Turismo">Turismo</option>
+                                <option value="Autobús">Autobús</option>
+                                <option value="Camión">Camión</option>
+                                <option value="Motocicleta">Motocicleta</option>
+                            </select>
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                    <button class="btn_inicio" id="btn_incio_ejer10" value="Iniciar">Iniciar</button>
+                </div>
+                <div id="ejercicio_11" class="ejercicios" style="display:none;">
+                    <h4>El Depto. de Seguridad Pública y Transito de desea saber de los n autos que entran a la ciudad de Bogotá, cuantos entran con calcomanía de cada color. Conociendo el último dígito de la placa de cada automóvil se puede determinar el color de la calcomanía utilizando la sig. Relación:<br><br> DÍGITO COLOR <br>1 o 2 amarilla<br> 3 o 4 rosa<br> 5 o 6 roja<br>7 o 8 verde<br> 9 o 0 azul</h4>
+                    <form id="form_11">
+                        <input id="parametro_placas" type="number" required placeholder="Ingrese el parametro de vehiculos">
+                        <table class="tabla" id="tabla_calco">
+                            <thead>
+                                <tr>
+                                    <th>COD</th>
+                                    <th>COLOR CALCOMANIA</th>
+                                    <th>PLACA</th>
+                                    <th>TOTAL VEHICULOS</td>
+                                </tr>
+                            </thead>
+                            <tbody id="dataTable_calco"></tbody>
+                        </table>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+
+                    <dialog class="favDialog" id="favDialog_11">
+                        <form id="dialogo_11" data-placas>
+                            <input type="number" name="num_placa" required
+                                placeholder="Ingrese el ultimo diguito de la placa">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+                <div id="ejercicio_12" class="ejercicios" style="display:none;">
+                    <h4>Diseñe un algoritmo que determine el resultado de la elección del representante estudiantil de la universidad X, para ello se presentaron tres candidatos A, B, y C. Para ganar la elección se debe obtener como mínimo el 51%. En caso que no haya un ganador se repite la elección en una segunda vuelta. Van a la segunda vuelta los dos candidatos que obtengan la más alta votación. Se anula la elección en caso de producirse un empate doble por el segundo lugar o un empate triple.</h4>
+                    <form id="form_12">
+                        <input id="parametros_12" type="number" required placeholder="Ingrese el parametro de votos">
+                        <textarea id="text_resultado_ejer12" readonly
+                            placeholder="Aqui aparece el resultado"></textarea><br>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+                    <dialog class="favDialog" id="favDialog_12" data-votos2>
+                        <form id="dialog_12">
+                            <h5 style="color: #fff;">1 = A, 2 = B, 3 = C</h5>
+                            <input type="number" name="num_ejer12" required placeholder="Ingrese su voto">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                </div>-->
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
